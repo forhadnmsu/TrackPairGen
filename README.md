@@ -1,11 +1,20 @@
 # Combinatoric Generation and Reconstruction with RUS
 This module allows you to perform combinatoric event generation and reconstruction using the **`Fun4Sim.C`** macro.
 
-## Building Track PDF:
-Befrore you run the Fun4All macro, you need the appropiate track PDF. If you want to generate from unform distributions then, you can ignore this step.
-
-The script applies the following event selections in the experimental commisoning data, which already has selections applied so that only target likely events are survibed.:
 ## Step 1: Run the Python Script and Apply Mass-Momentum Selection
+Befrore you run the Fun4All macro, you need the appropiate track PDF. If you want to generate track momenta from unform distributions then, you can ignore this step.
+This script uses the following event selections in the experimental commisoning data from SpinQuest, where the selections are already applied so that only target likely events are survibed.
+
+Remove events in the range:
+\[
+2.9 < m_{\mu^+\mu^-} < 3.4
+\quad \text{and} \quad
+65 < p_z^{\mu^+\mu^-} < 75
+\]
+
+**Notation:**
+- \( m_{\mu^+\mu^-} \) — invariant mass of the dimuon
+- \( p_z^{\mu^+\mu^-} \) — Pz of the dimuon
 
 In the first step, run the Python scripts to muons track momenta PDF, and you need the these python library: 
 
@@ -26,22 +35,7 @@ You need the following Python libraries in addition to the standard Python libra
 - scikit-learn
 - ROOT or uproot
 
-As the first step, events are filtered based on the dimuon invariant mass and longitudinal momentum.
-
-Remove events in the range:
-\[
-2.9 < m_{\mu^+\mu^-} < 3.4
-\quad \text{and} \quad
-65 < p_z^{\mu^+\mu^-} < 75
-\]
-
-**Notation:**
-- \( m_{\mu^+\mu^-} \) — invariant mass of the dimuon 
-- \( p_z^{\mu^+\mu^-} \) — Pz of the dimuon
-
-## Step 2: Construct the PDF using normalizing flow and pass it to Fun4All
-
-## Steps to Run MC Simulations
+## Step 2: Construct the PDF using normalizing flow and pass it to Fun4All: Steps to gerenrate and Reconstruct Combinatoric Simulations
 
 1. **Clone the repository**:
     ```bash
