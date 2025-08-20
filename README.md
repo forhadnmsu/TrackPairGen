@@ -6,11 +6,11 @@ Befrore you run the Fun4All macro, you need the appropiate track PDF. If you wan
 This script uses the following event selections in the experimental commisoning data from SpinQuest, where the selections are already applied so that only target likely events are survibed.
 
 Remove events in the range:
-$2.9 < M_{\mu^+\mu^-} < 3.4$ and $65 < p_z^{\mu^+\mu^-} < 75$
+$2.9 < M_{\mu^+\mu^-} < 3.4$ and $65 < Pz_{\mu^+\mu^-} < 75$
 
 **Notation:**
 - $M_{\mu^+\mu^-}$ — invariant mass of the dimuon
-- $p_z^{\mu^+\mu^-}$ — $P_z$ of the dimuon
+- $Pz_{\mu^+\mu^-}$ — $Pz$ of the dimuon
 
 
 In the first step, run the Python scripts to muons track momenta PDF, and you need the these python library: 
