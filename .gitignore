@@ -1,0 +1,9 @@
+*.root
+*.log
+*.tmp
+*.swp
+build/
+mc_gen_comb/scratch
+inst/
+mc_gen_comb/data
+mc_gen_comb/scratch
